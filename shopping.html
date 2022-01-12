@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.zenrays.com/mulaz/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Jumbo Formals</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header with Nav items and cart box -->
+        <div class="row header-nav bg-primary m-0 p-0">
+            <!-- WebPage Name and tag line-->
+            <div class="col-lg-3 col-sm-12 bg-red border-bottom border-dark text-light">
+                <h3 class="text-center mb-0 pb-0">Jumbo Formals</h3>
+                <p class="text-center mt-0 pt-0"><i>Cosmos of Combo Deals</i></p>
+            </div>
+            <!-- Navigation items -->
+            <div class="col bg-primary m-0 p-3 text-sm-center text-lg-right">
+                <a class="d-inline btn btn-primary mr-2 active" href="#">Shop</a>
+                <a class="d-inline btn btn-primary mr-2" href="#">About</a>
+                <a class="d-inline btn btn-primary mr-2" href="#">FAQ</a>
+                <a class="d-inline btn btn-primary mr-2" href="#">Contact</a>
+                <!-- <img class="cart_img" src="images/shopping-cart.png" alt="Cart"> -->
+                <i class="fa" style="font-size:24px"><img class="cart_img" src="images/shopping-cart.png"
+                        alt="Cart"></i>
+                <span class='badge badge-warning' id='lblCartCount'>0</span>
+            </div>
+        </div>
+        <!-- End of Header Nav Bar -->
+
+        <!-- Products Container Row 1-->
+        <div class="row products_container m-3">
+            <article class="card m-2">
+                <img class="card-img-top" src="images/1.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">Louis Philippe</h5>
+                    <small class="card-text">Slim Fit Formal Shirt x5</small>
+                    <div class="mt-2 row">
+                        <h5 class="col price w-50 d-inline">₹ 1209</h5>
+                        <button id="LouisPhilippe" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="LouisPhilippe" data-price="1209">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card m-2">
+                <img class="card-img-top" src="images/2.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">English Navy</h5>
+                    <small class="card-text">Men Slim Fit Formal Shirt x4</small>
+                    <div class="mt-2 row">
+                        <h5 class="col price w-50 d-inline">₹ 549</h5>
+                        <button id="EnglishNavy" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="EnglishNavy" data-price="549">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card m-2">
+                <img class="card-img-top" src="images/3.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">JAINISH</h5>
+                    <small class="card-text">Men Formal Shirt x3</small>
+                    <div class="mt-2 row">
+                        <h5 class="col price w-50 d-inline">₹ 519</h5>
+                        <button id="JAINISH" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="JAINISH"
+                            data-price="519">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card m-2">
+                <img class="card-img-top" src="images/4.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">INVICTUS</h5>
+                    <small class="card-text">Easy Care Men Formal Shirt x2</small>
+                    <div class="mt-2 row">
+                        <h5 class="col price w-50 d-inline">₹ 799</h5>
+                        <button id="INVICTUS" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="INVICTUS" data-price="799">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Products Container Row 2-->
+        <div class="row products_container m-3">
+            <article class="card m-2">
+                <img class="card-img-top" src="images/5.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">H&M</h5>
+                    <small class="card-text">Men Slim Fit Easy Iron Shirt x5</small>
+                    <div class="mt-2 row">
+                        <h5 class="col price w-50 d-inline">₹ 1299</h5>
+                        <button id="HM" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="HM"
+                            data-price="1299">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card m-2">
+                <img class="card-img-top" src="images/6.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">Nautica</h5>
+                    <small class="card-text">Men Blue Opaque Shirt x4</small>
+                    <div class="mt-2 row">
+                        <h5 class="col price w-50 d-inline">₹ 1539</h5>
+                        <button id="Nautica" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="Nautica"
+                            data-price="1539">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card m-2">
+                <img class="card-img-top" src="images/7.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">Hancock</h5>
+                    <small class="card-text">Slim Fit Formal Shirt x3</small>
+                    <div class="row mt-2">
+                        <h5 class="col price w-50 d-inline">₹ 629</h5>
+                        <button id="Hancock" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="Hancock"
+                            data-price="629">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card m-2">
+                <img class="card-img-top" src="images/8.webp" alt="Card image cap">
+                <div class="card-body text-left">
+                    <h5 class="card-title">Raymond</h5>
+                    <small class="card-text">Slim Fit Formal Shirt x2</small>
+                    <div class="mt-2 row">
+                        <h5 class="col price w-50 d-inline">₹ 1499</h5>
+                        <button id="Raymond" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="Raymond"
+                            data-price="1499">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>

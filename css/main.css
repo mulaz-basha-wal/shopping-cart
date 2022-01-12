@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(45deg, #dc2424, #4a569d);
+}
+
+.cart_img {
+    max-width: 24px;
+    max-height: 24px;
+    box-sizing: border-box;
+}
+
+.card-img-top {
+    padding: 10px;
+    width: 310px;
+    max-height: 310px;
+}
+
+.card-img-top:hover {
+    padding: 0px;
+}
+
+.card {
+    box-shadow: 2px 2px 2px 3px black;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
+}
+
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+
+@media (max-width :599px) {
+    .card {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width :600px) and (max-width :999px) {
+    .card {
+        padding: 10px;
+        width: 47%;
+    }
+}
