@@ -15,7 +15,10 @@ function onCart(button) {
         Cart = JSON.parse(localStorage.getItem("Cart"));
         if (button.textContent === "Add to Cart") {
             let product = {
+                imgsrc: button.dataset.imgsrc,
+                num_items: 1,
                 name: button.dataset.product,
+                desc: button.dataset.desc,
                 price: button.dataset.price
             }
             Cart.push(product);
@@ -36,7 +39,10 @@ function onCart(button) {
     }
     else {
         let product = {
+            imgsrc: button.dataset.imgsrc,
+            num_items: 1,
             name: button.dataset.product,
+            desc: button.dataset.desc,
             price: button.dataset.price
         }
         Cart.push(product)

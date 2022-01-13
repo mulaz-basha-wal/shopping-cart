@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.zenrays.com/mulaz/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/cart.js"></script>
+    <title>Cart - Jumbo Formals</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header with Nav items and cart box -->
+        <div class="row bg-primary m-0 p-0">
+            <!-- WebPage Name and tag line-->
+            <div class="col-lg-3 col-sm-12 border-bottom border-dark text-light">
+                <h3 class="text-center mb-0 pb-0">Jumbo Formals</h3>
+                <p class="text-center mt-0 pt-0"><i>Cosmos of Combo Deals</i></p>
+            </div>
+            <!-- Navigation items -->
+            <div class="col bg-primary m-0 p-3 text-sm-center text-lg-right">
+                <a class="d-inline btn btn-primary mr-2" href="shopping.html">Shop</a>
+                <a class="d-inline btn btn-primary mr-2" href="#">About</a>
+                <a class="d-inline btn btn-primary mr-2" href="#">Contact</a>
+
+                <!-- My Cart trail -->
+                <div class="cart-icon d-inline-block">
+                    <a class="d-inline btn btn-primary active" href="#">
+                        <img class="cart_img" src="images/shopping-cart.png" alt="Cart">
+                        <span class='badge badge-warning' id='lblCartCount'>0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header Nav Bar -->
+
+        <div class="row m-0 pt-3 pb-3">
+            <h1 class="col text-center text-light">Shopping Bag</h1>
+        </div>
+
+        <div class="container">
+            <table class="table table-bordered table-hover table-responsive-sm bg-white m-0">
+                <thead class="table-dark">
+                    <tr>
+                        <td>Photo</td>
+                        <td>Brand</td>
+                        <td>Desciption</td>
+                        <td>Base Price</td>
+                        <td>No.of Items</td>
+                        <td>Price</td>
+                    </tr>
+                </thead>
+                <tbody class="table_body align-items-center overflow-auto">
+                </tbody>
+            </table>
+            <div class="bg-dark text-right text-light p-3">
+                <h2 id="total_price">Total Cost: ₹0</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

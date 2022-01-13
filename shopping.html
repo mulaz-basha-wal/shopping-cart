@@ -24,12 +24,15 @@
             <div class="col bg-primary m-0 p-3 text-sm-center text-lg-right">
                 <a class="d-inline btn btn-primary mr-2 active" href="#">Shop</a>
                 <a class="d-inline btn btn-primary mr-2" href="#">About</a>
-                <a class="d-inline btn btn-primary mr-2" href="#">FAQ</a>
                 <a class="d-inline btn btn-primary mr-2" href="#">Contact</a>
-                <!-- <img class="cart_img" src="images/shopping-cart.png" alt="Cart"> -->
-                <i class="fa" style="font-size:24px"><img class="cart_img" src="images/shopping-cart.png"
-                        alt="Cart"></i>
-                <span class='badge badge-warning' id='lblCartCount'>0</span>
+                
+                <!-- My Cart trail -->
+                <div class="cart-icon d-inline-block">
+                    <a class="d-inline btn btn-primary mr-2" href="cart.html">
+                        <img class="cart_img" src="images/shopping-cart.png" alt="Cart">
+                        <span class='badge badge-warning' id='lblCartCount'>0</span>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- End of Header Nav Bar -->
@@ -44,7 +47,11 @@
                     <div class="mt-2 row">
                         <h5 class="col price w-50 d-inline">₹ 1209</h5>
                         <button id="LouisPhilippe" class="col-7 btn btn-primary" onclick="onCart(this)"
-                            data-product="LouisPhilippe" data-price="1209">Add to Cart</button>
+                            data-product="LouisPhilippe"
+                            data-desc="Slim Fit Formal Shirt"
+                            data-price="1209"
+                            data-imgsrc="1"
+                            >Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -56,7 +63,11 @@
                     <div class="mt-2 row">
                         <h5 class="col price w-50 d-inline">₹ 549</h5>
                         <button id="EnglishNavy" class="col-7 btn btn-primary" onclick="onCart(this)"
-                            data-product="EnglishNavy" data-price="549">Add to Cart</button>
+                            data-product="EnglishNavy"
+                            data-desc="Men Slim Fit Formal Shirt"
+                            data-price="549"
+                            data-imgsrc="2"
+                            >Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -67,8 +78,11 @@
                     <small class="card-text">Men Formal Shirt x3</small>
                     <div class="mt-2 row">
                         <h5 class="col price w-50 d-inline">₹ 519</h5>
-                        <button id="JAINISH" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="JAINISH"
-                            data-price="519">Add to Cart</button>
+                        <button id="JAINISH" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="JAINISH"
+                            data-desc="Men Formal Shirt"
+                            data-price="519"
+                            data-imgsrc="3">Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -80,7 +94,8 @@
                     <div class="mt-2 row">
                         <h5 class="col price w-50 d-inline">₹ 799</h5>
                         <button id="INVICTUS" class="col-7 btn btn-primary" onclick="onCart(this)"
-                            data-product="INVICTUS" data-price="799">Add to Cart</button>
+                            data-product="INVICTUS" data-price="799"
+                            data-desc="Easy Care Men Formal Shirt" data-imgsrc="4">Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -96,9 +111,11 @@
                     <small class="card-text">Men Slim Fit Easy Iron Shirt x5</small>
                     <div class="mt-2 row">
                         <h5 class="col price w-50 d-inline">₹ 1299</h5>
-                        <button id="HM" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="HM"
-                            data-price="1299">Add
-                            to Cart</button>
+                        <button id="HM" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="HM"
+                            data-desc="Men Slim Fit Easy Iron Shirt"
+                            data-price="1299"
+                            data-imgsrc="5">Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -109,8 +126,11 @@
                     <small class="card-text">Men Blue Opaque Shirt x4</small>
                     <div class="mt-2 row">
                         <h5 class="col price w-50 d-inline">₹ 1539</h5>
-                        <button id="Nautica" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="Nautica"
-                            data-price="1539">Add to Cart</button>
+                        <button id="Nautica" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="Nautica"
+                            data-desc="Men Blue Opaque Shirt"
+                            data-price="1539"
+                            data-imgsrc="6">Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -121,8 +141,11 @@
                     <small class="card-text">Slim Fit Formal Shirt x3</small>
                     <div class="row mt-2">
                         <h5 class="col price w-50 d-inline">₹ 629</h5>
-                        <button id="Hancock" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="Hancock"
-                            data-price="629">Add to Cart</button>
+                        <button id="Hancock" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="Hancock"
+                            data-desc="Slim Fit Formal Shirt"
+                            data-price="629"
+                            data-imgsrc="7">Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -133,8 +156,11 @@
                     <small class="card-text">Slim Fit Formal Shirt x2</small>
                     <div class="mt-2 row">
                         <h5 class="col price w-50 d-inline">₹ 1499</h5>
-                        <button id="Raymond" class="col-7 btn btn-primary" onclick="onCart(this)" data-product="Raymond"
-                            data-price="1499">Add to Cart</button>
+                        <button id="Raymond" class="col-7 btn btn-primary" onclick="onCart(this)"
+                            data-product="Raymond"
+                            data-desc="Slim Fit Formal Shirt"
+                            data-price="1499"
+                            data-imgsrc="8">Add to Cart</button>
                     </div>
                 </div>
             </article>

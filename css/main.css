@@ -12,6 +12,7 @@ body {
     padding: 10px;
     width: 310px;
     max-height: 310px;
+    margin: auto;
 }
 
 .card-img-top:hover {
@@ -20,19 +21,6 @@ body {
 
 .card {
     box-shadow: 2px 2px 2px 3px black;
-}
-
-.badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-}
-
-.label-warning[href],
-.badge-warning[href] {
-    background-color: #c67605;
 }
 
 #lblCartCount {
@@ -48,6 +36,10 @@ body {
     .card {
         padding: 10px;
         width: 100%;
+    }
+    .product{
+        width: 64px;
+        height: 64px;
     }
 }
 
